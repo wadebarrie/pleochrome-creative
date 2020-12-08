@@ -5,6 +5,7 @@ import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
+import anchorLink from 'react-anchor-link-smooth-scroll';
 
 const Header = () => (
   <StaticQuery
@@ -31,18 +32,18 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Fast in
+                Pleochrome,
                 <br />
-                every way
+                The antidote
                 <br />
-                that matters
+                to monotony 
               </h1>
               <br />
-              <p>
+              {/* <p>
                 <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
+                  Check out my work &nbsp;&#x2794;
                 </StyledExternalLink>
-              </p>
+              </p> */}
             </Text>
           </Grid>
         </Container>

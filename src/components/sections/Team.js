@@ -11,31 +11,31 @@ const TEAM = [
     image: 'josh.jpg',
     role: 'Founder',
   },
-  {
-    name: 'Lisa Haydon',
-    image: 'lisa.jpg',
-    role: 'Art Director',
-  },
-  {
-    name: 'Ashlyn Harris',
-    image: 'ashlyn.jpg',
-    role: 'Frontend Engineer',
-  },
-  {
-    name: 'Todd Joseph',
-    image: 'todd.jpg',
-    role: 'Designer',
-  },
-  {
-    name: 'Martin White',
-    image: 'martin.jpg',
-    role: 'Backend Engineer',
-  },
-  {
-    name: 'Rose Leslie',
-    image: 'rose.jpg',
-    role: 'Marketing',
-  },
+  // {
+  //   name: 'Lisa Haydon',
+  //   image: 'lisa.jpg',
+  //   role: 'Art Director',
+  // },
+  // {
+  //   name: 'Ashlyn Harris',
+  //   image: 'ashlyn.jpg',
+  //   role: 'Frontend Engineer',
+  // },
+  // {
+  //   name: 'Todd Joseph',
+  //   image: 'todd.jpg',
+  //   role: 'Designer',
+  // },
+  // {
+  //   name: 'Martin White',
+  //   image: 'martin.jpg',
+  //   role: 'Backend Engineer',
+  // },
+  // {
+  //   name: 'Rose Leslie',
+  //   image: 'rose.jpg',
+  //   role: 'Marketing',
+  // },
 ];
 
 const Team = () => (
@@ -67,9 +67,9 @@ const Team = () => (
       }
     `}
     render={data => (
-      <Section id="team" accent="secondary">
+      <Section id="about" accent="secondary">
         <Container style={{ position: 'relative' }}>
-          <h1>The Team</h1>
+          <h1>About Abbie</h1>
           <TeamGrid>
             {TEAM.map(({ name, image, role }) => {
               const img = data.allFile.edges.find(
@@ -79,11 +79,10 @@ const Team = () => (
               return (
                 <div key={name}>
                   <Img fluid={img.childImageSharp.fluid} alt={name} />
-                  <Title>{name}</Title>
-                  <Subtitle>{role}</Subtitle>
                 </div>
               );
             })}
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </TeamGrid>
           <Art>
             <Img fluid={data.art_team.childImageSharp.fluid} />
@@ -99,7 +98,7 @@ const Team = () => (
 
 const TeamGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
+  grid-template-columns: repeat(auto-fill, 300px);
   grid-template-rows: min-content;
   grid-gap: 50px;
   justify-content: space-between;

@@ -11,18 +11,18 @@ import InstagramIcon from '@static/icons/instagram.svg';
 import TwitterIcon from '@static/icons/twitter.svg';
 
 const SOCIAL = [
-  {
-    icon: GithubIcon,
-    link: 'https://github.com/ajayns/gatsby-absurd',
-  },
+  // {
+  //   icon: GithubIcon,
+  //   link: 'https://github.com/ajayns/gatsby-absurd',
+  // },
   {
     icon: InstagramIcon,
-    link: 'https://instagram.com/ajay_ns',
+    link: 'https://instagram.com/pleo.chrome',
   },
-  {
-    icon: TwitterIcon,
-    link: 'https://twitter.com/ajayns08',
-  },
+  // {
+  //   icon: TwitterIcon,
+  //   link: 'https://twitter.com/ajayns08',
+  // },
 ];
 
 const Footer = () => (
@@ -52,14 +52,14 @@ const Footer = () => (
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>Absurd</h2>
+              <h2>Pleochrome</h2>
               <span>
-                Illustrations by
-                {` `}
-                <ExternalLink href="https://twitter.com/diana_valeanu">
-                  @diana_valeanu
-                </ExternalLink>
+                <a href="mailto:abhidheya@gmail.com">
+                 Email me
+                </a>
               </span>
+              <br />
+              <a href="sms:7789289054">Text Me</a>
             </Copyright>
             <SocialIcons>
               {SOCIAL.map(({ icon, link }) => (

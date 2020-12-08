@@ -33,11 +33,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Absurd`,
-        short_name: `absurd`,
+        name: `Pleochrome Creative`,
+        short_name: `plechrome`,
         start_url: `/`,
-        background_color: `#8bd8ed`,
-        theme_color: `#8bd8ed`,
+        background_color: `#ffe0e3`,
+        theme_color: `#ffe0e3`,
         display: `minimal-ui`,
         icon: `static/favicon.svg`,
       },
